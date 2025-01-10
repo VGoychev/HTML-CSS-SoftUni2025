@@ -1,0 +1,23 @@
+section{
+    background-color: skyblue;
+}
+nav a {
+color: red;
+}
+ul li:first-child {
+    font-weight: bold;
+  }
+  
+  ul li:nth-of-type(2) {
+    color: blue;
+  }
+  .services::before{
+    content: ">> ";
+    color: red;
+    font-weight: bold;
+  }
+  .services::after{
+    content: " <<";
+    color: red;
+    font-weight: bold;
+  }

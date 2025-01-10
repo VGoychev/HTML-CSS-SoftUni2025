@@ -1,0 +1,16 @@
+p.highlight{
+    color: skyblue;
+}
+p#special{
+    background-color: orange;
+}
+div#only{
+    background-color: lightgrey;
+    padding: 5px;
+}
+a[href="https://softuni.bg"]{
+    color: orange;
+}
+.first{
+    color: blue;
+}

@@ -1,0 +1,27 @@
+a {
+    padding: 20px;
+    font-size: medium;
+    color: black;
+}
+
+header,
+section,
+footer {
+    margin: 10px;
+    padding: 5px;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+nav a:hover,
+section a:hover,
+footer a:hover {
+    color: orange;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}

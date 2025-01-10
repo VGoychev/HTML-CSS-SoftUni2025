@@ -1,0 +1,21 @@
+h1{
+    color: blue;
+}
+p{
+    color: green;
+}
+.highlight{
+    background-color: brown;
+}
+#main-title{
+    color: violet;
+}
+#special-paragraph{
+    font-style: italic;
+}
+ul{
+    list-style-type: circle;
+}
+li{
+    color: teal;
+}
