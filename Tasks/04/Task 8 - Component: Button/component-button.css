@@ -1,0 +1,36 @@
+
+a{
+    color: black;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+.orange{
+    background-color: orange;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: large;
+}
+
+.yellow{
+    background-color: lightyellow;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: large;
+}
+
+.white{
+    background-color: white;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: large;
+}
+.gray{
+    background-color: lightgray;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: large;
+}
+button{
+    margin: 10px;
+    border: 1px solid lightgray;
+}

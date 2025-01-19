@@ -1,0 +1,25 @@
+p{
+    background-color: skyblue;
+    text-align: center;
+    padding: 5px;
+    font-size: large;
+    width: 200px;
+    margin-left: 70px;
+}
+
+.padding{
+    background-color: lightgreen;
+    padding: 2px;
+}
+
+.border{
+    background-color: lightsalmon;
+    padding: 20px;
+
+}
+.margin{
+    background-color: darkred;
+    padding: 20px;
+    box-sizing: content-box;
+    width: 400px;
+}

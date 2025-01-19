@@ -1,0 +1,19 @@
+html{
+    font-family: sans-serif;
+}
+
+.first{
+    font-size: large;
+}
+
+footer{
+    font-style: italic;
+}
+
+span{
+    font-weight: bold;
+}
+
+.container{
+    max-width: 60%;
+}

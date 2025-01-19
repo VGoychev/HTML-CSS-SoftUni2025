@@ -1,0 +1,11 @@
+summary{
+font-size: large;
+padding: 10px;
+font-weight: bold;
+}
+details{
+    border: 0.5px solid gray;
+}
+p{
+    margin: 10px;
+}
