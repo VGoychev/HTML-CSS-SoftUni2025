@@ -1,0 +1,36 @@
+div {
+    margin: 10px;
+}
+
+.solid {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.dashed {
+    border: 2px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.dotted {
+    border: 2px;
+    border-style: dotted;
+    border-color: black;
+}
+
+.mixed {
+    border-top: 3px;
+    border-top-style: dashed;
+    border-top-color: #333;
+    border-bottom: 3px;
+    border-bottom-style: dashed;
+    border-bottom-color: #333;
+    border-left: 4px;
+    border-left-style: solid;
+    border-left-color: #000;
+    border-right: 4px;
+    border-right-style: solid;
+    border-right-color: #000;
+}
