@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.container{
+    max-width: 1200px;
+    border: 2px solid #999;
+    border-bottom: 4px solid #999;
+    border-radius: 0.3em;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    flex-shrink: 1;
+}
+
+button{
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    margin: 4px 4px;
+    height: 3em;
+    border: 2px solid #999;
+    border-bottom: 3px solid #999;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    background: #fff;
+    flex-grow: 1;
+}
+
+
+.specific-row,
+.row{
+    display: flex;
+    flex-shrink: 1;
+}
+
+button.space{
+    flex-grow: 10;
+}
+
+button.enter {
+    position: relative;
+    width: 80px;
+    background: #ddd;
+    box-shadow: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+button.enter::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37%;
+    height: 4px;
+    background-color: #999;
+}
+div.enter {
+    padding: 1em 1.2em;
+    width: 50px;
+    height: 40px;
+    margin: 4px 4px;
+    height: 3em;
+    flex-grow: 1;
+    margin-top:-4.5px;
+    background:#ddd;
+    box-shadow: none;
+    margin-right: 3.7px;
+    border-bottom: 4px solid #999;
+    border-left: 2px solid #999;
+    border-right: 2px solid #999;
+    flex-shrink: 1;
+}
+
+.first-row button{
+    background: #ddd;
+}
+
+.first-row{
+    display: flex;
+    flex-shrink: 1;
+}
+
+.spec-button{
+    background-color: #ddd;
+}
+
+.spec-button.shift{
+    flex-grow: 12;
+}
