@@ -20,10 +20,6 @@ ul li{
     display: block;
 }
 
-details{
-    
-}
-
 details summary{
     list-style-type: none;
     display: flex;
