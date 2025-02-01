@@ -1,0 +1,59 @@
+body{
+    display: flex;
+}
+.container{
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 0 0.3em 0 rgb(0, 0, 0, 0.3);
+    border-radius: 0.3em;
+    padding: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+article{
+    border-left: 4px solid #ddd;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+
+    margin: 2em;
+}
+
+article p{
+    font-style: italic;
+}
+
+article p.author{
+    text-align: end;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td{
+    border: 1px solid #aaa;
+}
+
+th{
+    background: #ccc;
+    text-align: start;
+}
+
+th,
+td{
+    padding: 5px;
+}
+
+tr:nth-child(odd){
+    background: #eee;
+}
+
+@media (max-width: 800px) {
+    p{
+        font-size: 13px;
+    }
+}

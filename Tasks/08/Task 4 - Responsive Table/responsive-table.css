@@ -1,0 +1,80 @@
+body{
+    padding: 1em;
+}
+
+@media (max-width: 600px) {
+    table,
+    table tbody,
+    table tbody tr,
+    table tbody tr td{
+        display: block;
+        width: 100%;
+    }
+
+    table {
+        margin-bottom: 4em;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr{
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 1em 1.5em;
+        border-radius: 0.3em;
+    }
+
+    table tbody tr + tr {
+        margin-top: 1em;
+    }
+
+   
+    table tbody tr td{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid dashed #ddd;
+        padding-top: 0.5em;
+    }
+    table tbody td::before{
+        display: block;
+        content: attr(data-title);
+        font-weight: bold;
+        color: #000;
+        padding-right: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+
+    table{
+        max-width: 1200px;
+        background: #fff;
+        box-shadow: 0 0 0.3em 0 rgb(0, 0, 0, 0.3);
+        border-radius: 0.3em;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table,
+    th,
+    tr,
+    td{
+    border-bottom: 1px solid #ddd;
+    }
+    
+    th{
+        background: #ddd;
+    }
+    
+    th,
+    td{
+        padding: 0.5em 1em;
+    }
+    
+    th{
+        text-align: start;
+    }
+
+   
+}

@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 800px) {
+    .container{
+        display: flex;
+        max-width: 1200px;
+        background: #fff;
+        box-shadow: 0 0 2em 0 rgb(0, 0, 0, 0.1);
+        border-radius: 0.3em;
+        padding: 2em;
+        gap: 1em;
+    }
+    
+    h1{
+        font-size: large;
+        margin-top: 6px;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .navbar {
+        display: none;
+        background: #ddd;
+        border-radius: 5px;
+    }
+    
+    .menu-btn {
+        display: inline-block;
+        background: #bbb;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    #menu-toggle:checked ~ .navbar {
+        display: block;
+    }
+    
+    #menu-toggle:checked ~ .menu-btn::after {
+        content: "Close Menu";
+    }
+    
+    .menu-btn::after {
+        content: "Open Menu";
+    }
+   
+    .navbar {
+        background: var(--blue-gray-900);
+        padding-top: 5px;
+    }
+    
+    /* All */
+    .navbar-menu a {
+        display: block;
+        padding: 0.3em;
+        text-decoration: none;
+        background: white;
+    }
+    
+    /* Top-level */
+    .navbar > .navbar-menu > li > a {
+        display: inline-block;
+        color: #000;
+        background: transparent;
+        transition: 
+            background var(--transition-timing) var(--transition-timing-function),
+            color var(--transition-timing) var(--transition-timing-function);
+    }
+    
+    .navbar > .navbar-menu > li > a:hover,
+    .navbar > .navbar-menu > li > a:focus {
+        background: var(--blue-gray-800);
+        color: skyblue;
+    }
+    
+    .navbar-menu {
+        display: flex;
+        gap: 2em;
+    }
+    
+    .navbar-menu,
+    .navbar-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    /* Nested */
+    .navbar-menu ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        visibility: hidden;
+        opacity: 0;
+        width: 14rem;
+        box-shadow: 0 0.25rem 1.5rem hsla(200, 19%, 18%, 0.05);
+        transition: 
+          visibility 0s var(--transition-timing-function) var(--transition-timing),
+          opacity var(--transition-timing) var(--transition-timing-function);
+    }
+    
+    .navbar-menu ul a {
+        color: var(--blue-gray-600);
+        transition: 
+            background var(--transition-timing) var(--transition-timing-function),
+            color var(--transition-timing) var(--transition-timing-function);
+    }
+    
+    .navbar-menu ul a:hover,
+    .navbar-menu ul a:focus {
+        background: #ddd;
+    }
+    
+    .navbar-menu ul > li > ul {
+        left: 100%;
+        top: 0;
+    }
+
+
+
+    .navbar-menu li{
+        border: 0.3px solid #999;
+        border-radius: 0.3em;
+    }
+    
+    .navbar-menu li {
+        position: relative;
+    }
+    
+    .navbar-menu li.has-children > a {
+        position: relative;
+    }
+    
+    .navbar-menu li.has-children > a:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 1rem;
+        background: inherit;
+        z-index: 999;
+    }
+    
+    .navbar-menu li:hover > ul,
+    .navbar-menu li:focus-within > ul {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+    }
+}
