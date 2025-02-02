@@ -6,6 +6,6 @@ body, input, textarea, table{
     font: inherit;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-size: 1em;
+:is(p, ul, ol):not(:last-child){
+    padding-bottom: 1.5em;
 }
