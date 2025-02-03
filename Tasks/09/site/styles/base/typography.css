@@ -1,0 +1,7 @@
+html{
+    font: clamp(11ox, 11px + 0.1vw, 10px)/1.5 Verdana;
+}
+
+body, input, textarea, select, option, button{
+    font: inherit;
+}
