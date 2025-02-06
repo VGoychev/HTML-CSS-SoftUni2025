@@ -1,0 +1,94 @@
+h2{
+    font-size: 1.em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    transition: translate 0.3s ease-in;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 100%;
+    padding: 0.8em 0;
+    border: none;
+    border-bottom: 2px solid #AAA;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: orange;
+}
+
+input[type="text"]:user-invalid,
+input[type="email"]:user-invalid,
+input[type="password"]:user-invalid{
+    border-color: red;
+} 
+
+.field{
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.field .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.field label{
+    order: -1;
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+}
+
+.field input::placeholder{
+    color: transparent;
+}
+
+.field input:not(:placeholder-shown) ~ label{
+    translate: 0 -2.1em;
+}
+
+.field input:required ~ label::after{
+    content: '*';
+    color: #c00;
+    margin-left: 0.3em;
+}
+
+.field .helper{
+    display: block;
+    font-size: 0.85em;
+    opacity: 0.7;
+    padding: 0.1em 0 0.2em 0;
+}
+
+.container{
+    width: 100vw;
+    max-width: 25em;
+}
+
+button{
+    display: block;
+    background: #ccc;
+    width: 100%;
+    padding: 0.8em 1em; 
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.2em;
+}

@@ -1,0 +1,12 @@
+html{
+    font-size: clamp(10px, 10px + 0.15vw, 18px);
+    font-family: Lato, sans-serif;
+}
+
+body, input, button, select, textarea{
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
