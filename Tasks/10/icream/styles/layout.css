@@ -1,0 +1,318 @@
+.section{
+    padding: 1em max(2em, calc((100% - 60rem) / 2));
+}
+
+.section p:last-child{
+    padding: 0;
+}
+
+.section.site-header{
+    background: pink;
+    padding-bottom: 0;
+}
+
+.section.site-header .aside a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.section.site-header .aside .links,
+.section.site-header .aside .socials{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.section.site-header .aside .links{
+    padding-bottom: 1em;
+}
+
+.section.site-header .aside .socials{
+    margin-bottom: -1em;
+}
+
+.section.site-header .aside .links li,
+.section.site-header .aside .socials li{
+    display: block;
+}
+
+.section.site-header .aside .socials li .title{
+    display: none;
+}
+
+.section.site-header .main{
+    position: relative;
+    background: #fff;
+    border-radius: 5em;
+    padding: 0.5em 3em;
+    position: relative;
+    bottom: -2em;
+    z-index: 100;
+}
+
+.section.site-header .main .site-title{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section.site-header .main .site-title a{
+    color: pink;
+}
+
+.section.site-header .main .site-title a span{
+    color: aqua;
+    text-transform: lowercase;
+}
+
+.section.site-header .main a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.section.site-header nav ul{
+    padding-bottom: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.section.site-header nav li{
+    display: block;
+}
+
+.section.site-header nav li:nth-child(3){
+    margin-right: auto;
+}
+
+.section.site-header nav li a{
+    padding: 1em 1.5em;
+}
+
+.section.banner{
+    background: #665;
+    color: #fff;
+    padding-block: 20vh;
+    text-align: center;
+    font-weight: bold;
+    background-image: url("https://images.unsplash.com/photo-1627373719412-746f5c1e5363?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section.section.banner::before{
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.section.banner > *{
+    position: relative;
+    z-index: 10;
+    text-shadow: 0 0 1em #000;
+}
+.section.banner h2{
+    font-size: 6.5em;
+}
+
+.section.banner h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.section.banner button{
+    margin-top: 30px;
+    padding: 0.8em 1.2em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5em;
+    color: #fff;
+    background: rgb(242, 167, 180);
+}
+
+.section.banner p{
+    padding: 0 4em;
+}
+
+.section.featured-product{
+    background: lightblue;
+    padding-top: 5em;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.section.featured-product hr{
+    border: none;
+    color: rgb(242, 167, 180);
+    background: rgb(242, 167, 180);
+    height: 6px;
+    width: 4em;
+    margin: 10px;
+    margin-left: 48%;
+    margin-right: 48%;
+}
+
+.section.featured-product h2{
+    color: #001;
+    font-size: 3em;
+    padding-bottom: 2em;
+}
+
+.section.featured-product .container{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+.section.featured-product .container img{
+    border-radius: 0.5em;
+}
+
+.section.featured-product .container article{
+    display: flex;
+    flex-direction: column;
+    height: 461px;
+    flex-basis: 28%;
+}
+
+.section.featured-product .container article h3{
+    padding: 0.6em 0;
+    font-size: 2em;
+    color: #000;
+    text-align: start;
+}
+
+.section.featured-product .container article p{
+    padding: 0.6em 0;
+    font-size: 1.4em;
+    color: #000;
+    text-align: start;
+}
+
+.section.featured-product .container article h4{
+    padding: 0.6em 0;
+    font-size: 1.5em;
+    color: #444;
+    text-align: start;
+}
+
+.section.featured-product .container article button{
+    margin-right: 75%;
+    margin-top: 2em;
+    padding: 0.8em 1.2em;
+    border: none;
+    color: #fff;
+    border-radius: 5em;
+    background: skyblue;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.section.featured-product .container article:last-child button{
+    background: pink;
+}
+
+.section.featured-product .container article ul{
+    list-style: none;
+    padding: 1em 0;
+    text-align: start;
+}
+
+.section.featured-product .container article ul li{
+    padding: 0.8em 0;
+    font-size: 1.4em;
+}
+
+.section.featured-product .container article ul li::before{
+    content: '✓';
+    padding-right: 1em;
+}
+
+.section.site-footer{
+    background: #eee;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4em;
+    padding-bottom: 10em;
+}
+
+.section.site-footer .site-title{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 0.6em;
+}
+
+.section.site-footer .site-title a{
+    color: pink;
+    text-decoration: none;
+}
+
+.section.site-footer .site-title a span{
+    color: aqua;
+    text-transform: lowercase;
+}
+
+.socials{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+i{
+    border:1px solid lightgray ;
+    position: inherit;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: skyblue;
+}
+
+.section.site-footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+.section.site-footer .container section{
+    text-align: end;
+    padding-right: 1em;
+}
+
+.section.site-footer .container section:last-child{
+    border-left: 2px solid #000;
+    padding-left: 1em;
+    text-align: start;
+}
+
+.section.site-footer .container section h2,
+.section.site-footer .container section p{
+    padding-bottom: 0.3em;
+}
+
+.section.site-footer .reserved{
+    text-align: center;
+    margin-top: 5em;
+    font-size: 1.2em;
+}
+
+.section.site-footer .reserved span{
+    color: rgb(242, 167, 180);
+}
+
