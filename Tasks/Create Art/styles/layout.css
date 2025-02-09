@@ -1,0 +1,245 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+section{
+    padding: 1em max(2em, calc((100% - 60rem) / 2));
+}
+
+section.header{
+    background: white;
+    position: relative;
+    text-align: center;
+}
+
+section.header ul{
+    padding-top: 1.5em;
+    display: flex;
+    font-size: 1.2em;
+    gap: 2em;
+    justify-content: center;
+}
+
+section.header ul li{
+    display: block;
+    color: rgb(41, 41, 130);
+}
+
+section.header ul li:first-child{
+    color: red;
+}
+
+section.header button{
+    margin-top: 20px;
+    padding: 0.8em 2.4em;
+    font-size: 1.4em;
+    border: 2px solid red;
+    border-radius: 0.4em;
+    color: rgb(41, 41, 130);
+    background: #eee;
+}
+
+section.intro{
+    background: #fff;
+    padding-left: 10em;
+    padding-right: 1px;
+    padding-bottom: 4em;  
+}
+
+section.intro .container{
+    display: flex;
+}
+
+section.intro .container article h1{
+    font-family: Playwrite PE, serif;
+    font-size: 8em;
+    color: rgb(41, 41, 130);
+    padding-bottom: 0.3em;
+}
+
+section.intro .container article p{
+    font-family: Playwrite PE, serif;
+    color: #999;
+    font-size: 2.2em;
+}
+
+section.intro .container article button{
+    border: none;
+    border-radius: 5em;
+    padding: 1em 2.2em;
+    font-size: 1.5em;
+    background: rgba(255, 0, 0, 0.827);
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+    margin-right: 2em;
+    color: #fff;
+}
+
+section.intro .container article button:last-child{
+    background: #fff;
+    color: rgb(41, 41, 130);
+}
+
+section.intro .container img{
+    max-width: 1000px;
+    
+}
+section.first-main img,
+section.second-main img{
+    width: 400px;
+}
+section.first-main,
+section.second-main{
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin:10px;
+    border: 1px solid #eee;
+    border-radius: 0.3em;
+    background: #fff;
+    box-shadow: 3px 4px 0.6em -2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Playwrite PE, serif;
+    color: rgb(41, 41, 130);
+
+}
+
+section.first-main h2,
+section.second-main h2{
+    font-size: 3em;
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+    line-height: 1.4;
+}
+
+section.first-main p,
+section.second-main p{
+    opacity: 70%;
+    font-size: 1.5em;
+}
+
+section.second-main img.bubble{
+    position: absolute;
+    top: -30%;
+    left: -5.4%;
+}
+
+section.contact-us{
+    position: relative;
+    background: #fff;
+    padding-top: 10em;
+    text-align: center;
+}
+
+section.contact-us img{
+    width: 700px;
+}
+
+section.contact-us img.bubble{
+    width: 400px;
+    position: absolute;
+    top: -15%;
+    right: -5.4%;
+    
+}
+
+section.contact-us h3{
+    font-family: Playwrite PE, serif;
+    color: red;
+    font-weight: 400;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+section.contact-us h2{
+    font-family: Playwrite PE, serif;
+    font-size: 2.5em;
+    line-height: 1.4;
+    padding-bottom: 1em;
+    color: rgb(41, 41, 130);
+}
+
+section.contact-us p{
+    font-family: Playwrite PE, serif;
+    font-size: 1.3em;
+    opacity: 70%;
+    color: rgb(41, 41, 130);
+}
+
+section.contact-us .textarea-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.styled-textarea {
+    width: 100%;
+    height: 120px; /* Adjust height as needed */
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    background: rgb(41, 41, 130);
+    border-radius: 1em;
+    outline: none;
+    resize: vertical; /* Allows resizing only vertically */
+}
+
+.placeholder-label {
+    position: absolute;
+    top: 5%;
+    left: 12px;
+    font-size: 1.2em;
+    font-family: Playwrite PE, serif;
+    color: #aaa;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+form{
+    position: relative;
+    display: block;
+    gap: 1em;
+}
+
+input[type="email"],
+input[type="text"]{
+    width: 100%;
+    border: none;
+    background: rgb(41, 41, 130);
+    color: #fff;
+    font-family: Playwrite PE, serif;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+
+section.footer{
+    background: rgb(50, 50, 126);
+    color: #fff;
+    text-align: center;
+    padding: 5vh;
+}
+section.footer ul{
+    display: flex;
+    gap: 2em;
+    font-size: 1em;
+    padding-top: 1em;
+    justify-content: center;
+    font-weight: bold;
+}
+section.footer ul li{
+    display: block;
+}
+
+section.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section.footer p{
+    padding-top: 1.5em;
+    font-family: Playwrite PE, serif;
+    font-size: 0.85em;
+}
