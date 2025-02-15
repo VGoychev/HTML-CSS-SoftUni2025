@@ -1,0 +1,5 @@
+MacBook Pro 16" 2019 (A2141)
+
+Resolution:	3072x1920 Retina
+
+Framebuffer Depth:	24-Bit Colour (ARGB8888)

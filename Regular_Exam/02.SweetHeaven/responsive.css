@@ -1,0 +1,76 @@
+@media (width <= 600px) {
+    nav.nav{
+        display: flex;
+    }
+    
+    nav.nav > * {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+    
+    .nav-burger-menu{
+        display: block;
+        order: -1;
+        color: #fff;
+        font-size: 1.8em;
+        padding-top: 0.3em;
+    }
+    
+    .nav-logo a{
+        padding-left: 0;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    ul.nav-user-btns{
+        display: block;
+        width: 100%;
+    }
+    ul.nav-user-btns li button{
+        width: 100%;
+        padding: 0;
+    }
+    .nav-user-btns > li:nth-child(1) > button{
+        padding: 0.2em 1.5em;
+    }
+    
+    .nav-user-btns > li:nth-child(2) > button {
+        padding: 0.2em;
+    }
+
+    .content-info{
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+
+    .content-info .content-info-welcome h2{
+        font-size: 3em;
+    }
+
+    .content-info-welcome{
+        width: 100%;
+        text-align: center;
+    }
+    .content-info-img {
+        display: none;
+    }
+    .content-info-welcome button{
+        width: 80%;
+    }
+
+    .content-services{
+        flex-direction: column;
+    }
+    .content-services div{
+        width: 100%;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery img{
+        width: 100%;
+        background: transparent;
+    }
+}

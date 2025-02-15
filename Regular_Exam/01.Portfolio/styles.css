@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+html {
+  box-sizing: border-box;
+  font: 14px/1.5 IBM Plex Mono;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  background: #F5F5F5;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.container{
+  background: #080808;
+  max-width: 1300px;
+  width: 100%;
+  border-radius: 0.5em;  
+  padding-bottom: 2em;
+}
+
+header{
+  display: flex;
+  margin-left: 6%;
+  margin-right: 6%;
+  background: #1B1B1B;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 1.2em 3em;
+  justify-content: space-between;
+}
+
+header nav ul{
+  display: flex;
+  gap: 5em;
+}
+
+header nav ul li{
+  display: block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #979A9C;
+  font-size: 1.2em;
+}
+
+header .socials ul{
+  display: flex;
+  gap: 1em;
+  padding-right: 3em;
+  padding-top: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .socials ul li{
+  display: block;
+}
+
+
+header .socials ul li img{
+  width: 90%;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+main .description{
+  display: block;
+  width: 50%;
+}
+
+main .description h1{
+  color: #fff;
+  font-size: 3.5em;
+}
+
+main .description p{
+  color: #979A9C;
+  font-size: 1.2em;
+  padding-bottom: 0.8em;
+}
+
+main .description a{
+  padding: 1em 3em;
+  text-decoration: none;
+  color: #fff;
+  background: #3F8E00;
+  border-radius: 0.3em;
+}
+
+main img{
+  border-radius: 50%;
+  max-width: 350px;
+  height: 360px;
+}
+
+footer{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer p{
+  color: #fff;
+}
+
+footer ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #464646;
+  border-radius: 0.3em;
+  padding: 0.8em 2.5em;
+}
+

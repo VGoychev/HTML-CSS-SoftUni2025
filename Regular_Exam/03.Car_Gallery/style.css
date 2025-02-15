@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+
+section.header{
+    background: rgb(255,112,136);
+    background: linear-gradient(90deg, rgba(255,112,136,1) 28%, rgba(242,182,157,1) 45%);
+    min-height: 60dvh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8em;
+}
+
+section.header header{
+    display: flex;
+    justify-content: center;
+}
+
+section.header header nav ul{
+    display: flex;
+    gap: 0em;
+    margin-left: 1em;
+    padding: 0;
+}
+
+section.header header nav ul li{
+    display: block;
+    padding:0.8em 4em;
+    
+}
+
+section.header header nav ul li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #fff;
+    opacity: 80%;
+}
+
+section.header header nav ul li.hovered{
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    background: #F5BCAA;
+}
+
+section.header main{
+    text-align: center;
+}
+
+section.header main h1{
+    font-size: 4em;
+    color: #fff;
+    font-weight: 300;
+}
+
+section.header main p{
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+section.header main a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8em 2em;
+    font-size: 1.8em;
+    border: 2px solid #F9D8CD;
+    border-radius: 0.5em;
+}
+
+section.main {
+    min-height: 80dvh;
+    height: 100%;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+section.main .images{
+    display: flex;
+    background: #F6F8FB;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    height: 300px;
+    justify-content: center;
+    gap: 2em;
+}
+
+section.main .images img{
+    overflow: hidden;
+    width: 500px;
+}
+
+section.main .cards{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+section.main .cards article{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    width: 500px;
+}
+
+section.main .cards article h2{
+    font-size: 2.2em;
+    color: #575C5C;
+    font-weight: 350;
+}
+
+section.main .cards article p{
+    font-size: 1em;
+    color: #575C5C;
+    font-weight: 300;
+}
+
+section.main .cards article a{
+    text-decoration: none;
+    color: #575C5C;
+    align-self: center;
+    border: 1px solid #C2C7CC;
+    padding: 0.8em 1.4em;
+    border-radius: 0.5em;
+}
+
+section.register{
+    background-image: url('images/promo.jpg');
+    height: 100%;
+    min-height: 35dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.register .container{
+    display: flex;
+    border: 1px solid #9EC0B6;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section.register h2{
+    color: #EEFFFF;
+    font-size: 2.2em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+section.register a{
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #437274;
+    font-weight: 300;
+    padding: 0.8em 1.8em;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+section.weird-cars{
+    min-height: 70dvh;
+    text-align: center;
+}
+
+section.weird-cars h2{
+    font-size: 2.4em;
+    font-weight: 300;
+    color: #575C5C;
+    padding-top: 2.2em;
+    padding-bottom: 1em;
+}
+
+section.weird-cars a{
+    text-decoration: none;
+    color: #575C5C;
+    font-weight: 300;
+    border: 1px solid #C2C7CC;
+    padding: 0.9em 1.8em;
+    font-size: 1.05em;
+    border-radius: 0.3em;
+}
+
+section.weird-cars .images{
+    margin-top: 2.2em;
+    display: flex;
+    height: 200px;
+    background: #F6F8FB;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+section.weird-cars .images img{
+    width: 400px;
+}
+
+section.explore{
+    background: #F6F8FB;
+    border-top: 2px solid #E8E8E8;
+    min-height: 34dvh;
+    text-align: center;
+    position: relative;
+}
+
+section.explore::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.explore h2{
+    padding-top: 2.6em;
+    font-size: 2.2em;
+    font-weight: 300;
+    color: #575C5C;
+}
+
+section.explore p{
+    color: red;
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+section.footer{
+    background: #F6F8FB;
+    min-height: 20dvh;
+    text-align: center;
+}
+
+section.footer p{
+    padding-top: 5%;
+    color: #575C5C;
+    font-weight: 300;
+    opacity: 80%;
+}
